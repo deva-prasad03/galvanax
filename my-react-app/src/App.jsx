@@ -11,7 +11,7 @@ const App = () => {
     offset: 120,       // Start animation after 120px scroll
     duration: 1500,    // Animation duration (in ms)
     easing: "ease-in-out",
-    once: false,       // Animate every time you scroll
+    once: true,       // Animate every time you scroll
   });
   return (
     <div>

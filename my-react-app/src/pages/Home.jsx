@@ -1,13 +1,13 @@
 import React from 'react';
 import '../styles/Home.css';
-import Aos from 'aos';
+import { FaInstagram, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
     <div>
       {/* Hero Section */}
       <section
-  className="hero-section text-center py-5 "data-aos="fade-down"
+  className="hero-section text-center py-5" data-aos="fade-down"
   style={{
     background: 'linear-gradient(135deg, #2C3E50, #4CA1AF)',
     color: 'white',
@@ -59,7 +59,7 @@ const Home = () => {
   </section>
 
       {/* About Us */}
-      <section id="about" className="section" data-aos="fade-up" >
+      <section id="about" className="section" data-aos="fade-in" >
   <div className="container">
     <div className="about-content p-4 p-md-5">
       <h2 className="section-title text-center">About Us</h2>
@@ -90,7 +90,7 @@ const Home = () => {
               { title: 'Web Development', description: 'Building modern, responsive websites with cutting-edge technology.' },
               { title: 'Call Center Services', description: 'Delivering premium customer support and BPO solutions globally.' },
               {title: 'Data Entry', description:'Accurate and timely data entry services for businesses of all sizes.'},
-          
+              {title: 'Software Developing', description:'    We provide Custom Software Application Development, Inventory System, ERP development. Our software are best'},
               {title:'Hardware Servicing' ,description:'quality solution with quality products for all companies'}
 
 
@@ -138,11 +138,37 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="footer py-4" style={{ backgroundColor: '#2C3E50', color: 'white' }} >
-        <div className="container text-center">
-          <p>&copy; 2025 Galvanx Technology | Innovating the Future of IT</p>
+      <footer
+      className="footer py-5"
+      style={{ backgroundColor: "#2C3E50", color: "white" }}
+      data-aos="fade-up"
+    >
+      <div className="container text-center">
+        <h4 style={{ fontWeight: "bold" }}>GALVANX TECHNOLOGY</h4>
+        <p>
+          76/11 Nithin Complex, <br />
+          Near Old Bus Stand, <br />
+          Perundurai - 638 052
+        </p>
+        <p>Email: <a href="mailto:info@galvanxtechnology.com" style={{ color: "#f1c40f", textDecoration: "none" }}>info@galvanxtechnology.com</a></p>
+        <p>Call: <a href="tel:+919585814442" style={{ color: "#f1c40f", textDecoration: "none" }}>+91 95858 14442</a></p>
+
+        <div className="social-icons mt-3">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px", color: "white", fontSize: "1.5rem" }}>
+            <FaInstagram />
+          </a>
+          <a href="https://wa.me/919585814442" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px", color: "white", fontSize: "1.5rem" }}>
+            <FaWhatsapp />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" style={{ margin: "0 10px", color: "white", fontSize: "1.5rem" }}>
+            <FaLinkedin />
+          </a>
         </div>
-      </footer>
+
+        <hr style={{ borderColor: "#f1c40f", width: "60%", margin: "15px auto" }} />
+        <p>&copy; 2025 Galvanx Technology | Innovating the Future of IT</p>
+      </div>
+    </footer>
     </div>
   );
 };
